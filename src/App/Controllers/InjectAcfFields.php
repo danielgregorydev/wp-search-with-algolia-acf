@@ -9,14 +9,14 @@ class InjectAcfFields extends Base
 {
 	public function init()
 	{
-		add_action('algolia_post_records', [$this, 'inject'], 10, 2);
+		add_action('algolia_post_shared_attributes', [$this, 'inject'], 10, 2);
 	}
 
-	public function inject($records, $post)
+	public function inject($attributes, $post)
 	{
 		$acf = new ACFModel($post);
-		$records['acf'] = $acf->stringifyAllFields();
+		$attributes['acf'] = $acf->stringifyAllFields();
 
-		return $records;
+		return $attributes;
 	}
 }
