@@ -1,16 +1,16 @@
 <?php
 
-namespace Dgd\ExamplePlugin;
+namespace Dgd\AlgoliaAcf;
 
 /**
- * Plugin Name: Example Plugin
- * Description: Example plugin description.
+ * Plugin Name: WP Search with Algolia ACF
+ * Description: Add acf fields to algolia indexes created by WP Search with Algolia.
  * Author: Daniel Gregory
  * Version: 0.0.1
  */
 
-if (!defined('CUSTOM_MEMBER_ID_PLUGIN_FILE')) {
-	define('CUSTOM_MEMBER_ID_PLUGIN_FILE', __FILE__);
+if (!defined('WP_SEARCH_WITH_ALGOLIA_PLUGIN_FILE')) {
+	define('WP_SEARCH_WITH_ALGOLIA_PLUGIN_FILE', __FILE__);
 }
 
 require_once(plugin_dir_path(__FILE__) . '/vendor/autoload.php');
@@ -24,7 +24,7 @@ $main->init();
  * @return \ThePluginName\Common\Functions
  * @since 1.0.0
  */
-function examplePlugin(): \Dgd\ExamplePlugin\Common\Functions
+function algoliaAcfPlugin(): \Dgd\AlgoliaAcf\Common\Functions
 {
-	return new \Dgd\ExamplePlugin\Common\Functions();
+	return new \Dgd\AlgoliaAcf\Common\Functions();
 }
