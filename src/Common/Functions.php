@@ -1,19 +1,15 @@
 <?php
 
-namespace Dgd\ExamplePlugin\Common;
+namespace Dgd\AlgoliaAcf\Common;
 
-use Dgd\ExamplePlugin\Common\Abstracts\Base;
+use Dgd\AlgoliaAcf\Common\Abstracts\Base;
 
 /**
  * Main function class for external uses
  *
  * @see customMemberId()
- * @package DgdCustomMemberId\Common
+ * @package Dgd\AlgoliaAcf\Common
  */
 class Functions extends Base
 {
-	public function getExampleGlobal()
-	{
-		return $this->plugin->exampleGlobal();
-	}
 }

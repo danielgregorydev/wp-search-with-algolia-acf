@@ -1,6 +1,6 @@
 <?php
 
-namespace Dgd\ExamplePlugin\Common\Traits;
+namespace Dgd\AlgoliaAcf\Common\Traits;
 
 /**
  * The singleton skeleton trait to instantiate the class only once

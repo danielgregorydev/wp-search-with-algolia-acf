@@ -1,8 +1,8 @@
 <?php
 
-namespace Dgd\ExamplePlugin\Common\Abstracts;
+namespace Dgd\AlgoliaAcf\Common\Abstracts;
 
-use Dgd\ExamplePlugin\Config\Plugin;
+use Dgd\AlgoliaAcf\Config\Plugin;
 
 abstract class Base
 {
