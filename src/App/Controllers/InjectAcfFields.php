@@ -15,7 +15,8 @@ class InjectAcfFields extends Base
 	public function inject($attributes, $post)
 	{
 		$acf = new ACFModel($post);
-		$attributes['acf'] = $acf->stringifyAllFields();
+		$key = $this->plugin->acfAttributeKey();
+		$attributes[$key] = $acf->stringifyAllFields();
 
 		return $attributes;
 	}

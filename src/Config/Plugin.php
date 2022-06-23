@@ -31,4 +31,9 @@ final class Plugin
 	{
 		return $this->data()['plugin_path'] . '/' . $this->data()['plugin_template_folder'];
 	}
+
+	public function acfAttributeKey(): string
+	{
+		return 'acf';
+	}
 }
