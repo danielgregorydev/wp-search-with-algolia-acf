@@ -6,9 +6,9 @@
  * @package Custom_Membership_Id
  */
 
-use Dgd\ExamplePlugin\App\Models\Member;
+use Dgd\AlgoliaAcf\App\Models\Member;
 
-use function Dgd\ExamplePlugin\customMemberId;
+use function Dgd\AlgoliaAcf\customMemberId;
 
 class Test_Example extends WP_UnitTestCase
 {
